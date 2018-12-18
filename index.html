@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -17,30 +22,41 @@
     
     
   </head>
-<body>
+<body class="w3-theme-l4">
 <img src="ohnl2.png" height="256" width="256" alt="Open Hoer NelioLevin 2.0" >
-<p>Track 0 - ABBA<br>
-<audio id="player0" src="./music/abba.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-<div> 
-  <button onclick="document.getElementById('player0').play()">Play</button> 
-  <button onclick="document.getElementById('player0').pause()">Pause</button> 
 
-</div>
-<p>
-Track 1 - Geiss<br>
-<audio id="player1" src="./music/geiss.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-<div> 
-  <button onclick="document.getElementById('player1').play()">Play</button> 
-  <button onclick="document.getElementById('player1').pause()">Pause</button> 
-</div>
-<p>
-Video<br>
-  <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=PLsFxf_n8l9bgx8EJhNNfA82PvrFMyZVrK&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</iframe>
+
+<div class="w3-container w3-content">
+
+  <p class="w3-opacity"><b>Track 0 - ABBA</b></p>
+  <div class="w3-panel w3-white w3-card w3-display-container w3-center"> 
+     <audio id="player0" src="./music/abba.mp3" type="audio/mpeg">
+     Your browser does not support the audio element.
+     </audio>
+
+     <button class="w3-circle w3-indigo w3-xlarge w3-padding-larg" onclick="document.getElementById('player0').play()">></button> 
+     <button class="w3-circle w3-indigo w3-xlarge w3-padding-larg" onclick="document.getElementById('player0').pause()">||</button> 
+
+   </div>
+
+   <p class="w3-opacity"><b>Track 1 - Geiss</b></p>
+   <div class="w3-panel w3-white w3-card w3-display-container w3-center"> 
+      <audio id="player1" src="./music/geiss.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+   
+     <button class="w3-circle w3-indigo w3-xlarge w3-padding-larg" onclick="document.getElementById('player1').play()">></button> 
+     <button class="w3-circle w3-indigo w3-xlarge w3-padding-larg" onclick="document.getElementById('player1').pause()">||</button> 
+   </div>
+
+
+   <p class="w3-opacity"><b>Video</b></p>
+   <div class="w3-panel w3-white w3-card w3-display-container"> 
+      <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=PLsFxf_n8l9bgx8EJhNNfA82PvrFMyZVrK&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </iframe>
+   </div>
+</div>   
+
 
 </body>
 </html>
