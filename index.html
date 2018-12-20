@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -13,49 +14,49 @@
     <meta name="apple-mobile-web-app-title" content="OHNL2">
     <meta name="msapplication-starturl" content="/index.html">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link rel="icon" type="image/png" sizes="192x192" href="ohnl2.png">
     <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="ohnl2.png">
-    
+
     <link rel="icon" type="image/png" sizes="512x512" href="ohnl2.png">
     <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="ohnl2.png">
-    
-    
+
+
   </head>
 <body class="w3-theme-l4">
-<img src="ohnl2.png" height="256" width="256" alt="Open Hoer NelioLevin 2.0" >
+<img src="ohnl2.png" height="128" width="128" alt="Open Hoer NelioLevin 2.0">
 
 
-<div class="w3-container w3-content">
+<div class="w3-container w3-content w3-text-red">
 
   <p class="w3-opacity"><b>Track 0 - ABBA</b></p>
-  <div class="w3-panel w3-white w3-card w3-display-container w3-center"> 
+  <div class="w3-panel w3-white w3-card w3-display-container w3-text-red w3-round-large w3-padding-16">
      <audio id="player0" src="./music/abba.mp3" type="audio/mpeg">
      Your browser does not support the audio element.
      </audio>
 
-     <button class="w3-circle w3-indigo w3-xlarge w3-padding-larg" onclick="document.getElementById('player0').play()">></button> 
-     <button class="w3-circle w3-indigo w3-xlarge w3-padding-larg" onclick="document.getElementById('player0').pause()">||</button> 
+     <i style='font-size:48px' class='fas' onclick="document.getElementById('player0').play()">&#xf04b;</i>&nbsp;&nbsp;&nbsp;
+     <i style='font-size:48px' class='fas' onclick="document.getElementById('player0').pause()">&#xf28b;</i>
 
    </div>
 
    <p class="w3-opacity"><b>Track 1 - Geiss</b></p>
-   <div class="w3-panel w3-white w3-card w3-display-container w3-center"> 
+   <div class="w3-panel w3-white w3-card w3-display-container w3-text-red w3-round-large w3-padding-16">
       <audio id="player1" src="./music/geiss.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
       </audio>
-   
-     <button class="w3-circle w3-indigo w3-xlarge w3-padding-larg" onclick="document.getElementById('player1').play()">></button> 
-     <button class="w3-circle w3-indigo w3-xlarge w3-padding-larg" onclick="document.getElementById('player1').pause()">||</button> 
+
+           <i style='font-size:48px' class='fas' onclick="document.getElementById('player1').play()">&#xf04b;</i>&nbsp;&nbsp;&nbsp;
+           <i style='font-size:48px' class='fas' onclick="document.getElementById('player1').pause()">&#xf28b;</i>
    </div>
 
 
    <p class="w3-opacity"><b>Video</b></p>
-   <div class="w3-panel w3-white w3-card w3-display-container"> 
+   <div class="w3-panel w3-white w3-card w3-display-container w3-round-large w3-padding-16">
       <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=PLsFxf_n8l9bgx8EJhNNfA82PvrFMyZVrK&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </iframe>
    </div>
-</div>   
+</div>
 
 
 </body>
